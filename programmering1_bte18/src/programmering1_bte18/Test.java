@@ -14,8 +14,7 @@ public class Test{
 
 	double d1=tal2;
 
-	int tal3=(int)20.6666+05;
-	System.out.println(tal3);
+
 
 
 
