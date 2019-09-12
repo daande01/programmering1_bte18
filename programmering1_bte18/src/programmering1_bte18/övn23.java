@@ -6,17 +6,20 @@ public class övn23 {
 
 	public static void main(String[] args) {
 
-		String ålderString=JOptionPane.showInputDialog("ange din ålder");
-
+		String ålderString = JOptionPane.showInputDialog("ange din ålder");
 
 		int age = Integer.parseInt(ålderString);
 
-		//jobb kvar
+		double d = age / 10.0;
 
-		JOptionPane.showMessageDialog(null, "du fyller " +jämt+"om" +kvar);
+		int i = (int) d;
 
+		int jämt = i * 10 + 10;
+
+		int kvar = jämt - age;
+
+		JOptionPane.showMessageDialog(null, "du fyller " + jämt + "om" + kvar);
 
 	}
-
 
 }
