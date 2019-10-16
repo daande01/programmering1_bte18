@@ -14,7 +14,7 @@ public class bilforsakring {
 
 			System.out.print("pris : 1000kr");
 
-		}  if (längd >= 6 && längd < 10) {
+		} else if (längd >= 6 && längd < 10) {
 
 			System.out.print("pris : 2000kr");
 
