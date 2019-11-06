@@ -1,4 +1,4 @@
-package programmering1_bte18;
+package programmering1_bte18.loopar;
 
 public class Loopstar {
 
