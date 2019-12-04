@@ -3,13 +3,11 @@ public class Callbyvalue {
 
 	public static int subtraktion(int i , int k) {
 
-
 		k=100;
 		i=100;
 
 		return i-k;
 	}
-
 
 	public static void main(String[] args) {
 
