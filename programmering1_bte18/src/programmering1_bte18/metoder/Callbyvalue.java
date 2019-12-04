@@ -1,7 +1,5 @@
 package programmering1_bte18.metoder;
-
 public class Callbyvalue {
-
 
 	public static int subtraktion(int i , int k) {
 
@@ -11,8 +9,6 @@ public class Callbyvalue {
 
 		return i-k;
 	}
-
-
 
 
 	public static void main(String[] args) {
