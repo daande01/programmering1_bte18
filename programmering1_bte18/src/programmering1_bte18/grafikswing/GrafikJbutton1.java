@@ -2,16 +2,16 @@ package programmering1_bte18.grafikswing;
 
 import java.awt.Dimension;
 import java.awt.FlowLayout;
-import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-public class GrafikJbutton1 extends JFrame implements ActionListener {
+public class GrafikJbutton1 extends JFrame {
 
 	JButton b1 = new JButton("send form");
 	JLabel l1 = new JLabel("start text");
+	private int tal=0;
 
 	public GrafikJbutton1() {
 
@@ -20,8 +20,13 @@ public class GrafikJbutton1 extends JFrame implements ActionListener {
 		add(b1);
 		add(l1);
 		setVisible(true);
-		setSize(new Dimension(1000,1000));
-		b1.addActionListener(this);
+		setSize(new Dimension(1000, 1000));
+
+		b1.addActionListener(e -> {
+
+			l1.setText("test");
+
+		});
 
 	}
 
@@ -29,6 +34,5 @@ public class GrafikJbutton1 extends JFrame implements ActionListener {
 
 		new GrafikJbutton1();
 	}
-
 
 }
