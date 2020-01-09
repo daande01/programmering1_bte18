@@ -14,6 +14,8 @@ public class Test{
 
 	double d1=tal2;
 
+
+	Math.pow(a, b)
 // hej
 
 
