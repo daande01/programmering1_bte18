@@ -9,12 +9,12 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-public class GrafikJbutton extends JFrame implements ActionListener {
+public class GrafikJbuttonactionperforme extends JFrame implements ActionListener {
 
 	JButton b1 = new JButton("send form");
 	JLabel l1 = new JLabel("start text");
 
-	public GrafikJbutton() {
+	public GrafikJbuttonactionperforme() {
 
 		this.setLayout(new FlowLayout());
 
@@ -28,7 +28,7 @@ public class GrafikJbutton extends JFrame implements ActionListener {
 
 	public static void main(String[] args) {
 
-		new GrafikJbutton();
+		new GrafikJbuttonactionperforme();
 	}
 
 	@Override
