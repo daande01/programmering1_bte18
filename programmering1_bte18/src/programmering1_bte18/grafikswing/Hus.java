@@ -23,7 +23,7 @@ public class Hus {   // klass hus
 	 *
 	 */
 
-	public  void printhus() {
+	public void printhus() {
 
 		System.out.println("x="+x+"y="+y+"z="+z+"dörr="+dörr);
 	}
@@ -31,6 +31,7 @@ public class Hus {   // klass hus
 	public static void main(String[] args) {
 
 		Hus h1=new Hus(10, 20, 40, true); // skapar ett objekt och lagrar en referens till objektet i h1 samt skickar in inparametrar
+
 
 		h1.printhus(); // anropar instansmetoden på objektet h1 .
 
