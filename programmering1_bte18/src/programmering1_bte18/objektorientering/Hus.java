@@ -1,4 +1,4 @@
-package programmering1_bte18.grafikswing;
+package programmering1_bte18.objektorientering;
 
 public class Hus {   // klass hus
 
