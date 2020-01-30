@@ -12,6 +12,7 @@ import javax.swing.Timer;
 public class boll1 extends JComponent {
 	int x = 100;
 	int y=100;
+	int xv=2;
 	int yv=3;
 	static Timer t;
 
@@ -28,11 +29,27 @@ public class boll1 extends JComponent {
 
 	public void update() {
 
-		x = x - 0;
+		yv=yv+2;
+
 		y=y+yv;
+		x=x+xv;
 		if (y>=300) {
 
 			yv=-yv;
+
+		}else if (y<=0) {
+
+			yv=yv*-1;
+
+		}
+
+		if (x>=300) {
+
+			xv=-xv;
+
+		}else if (x<=0) {
+
+			xv=xv*-1;
 
 		}
 
