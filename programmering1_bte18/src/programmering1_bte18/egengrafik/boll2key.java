@@ -43,7 +43,7 @@ public class boll2key extends JComponent implements KeyListener {
 		}else if (y<=0) {
 
 			yv=yv*-1;
-
+			y=0;
 		}
 
 		if (x>=300) {
@@ -88,10 +88,9 @@ public class boll2key extends JComponent implements KeyListener {
 		if (key == KeyEvent.VK_UP) {
 
 
-			y=y+10;
+			y=y-10;
 
 		}
-
 
 
 	}
@@ -104,7 +103,8 @@ public class boll2key extends JComponent implements KeyListener {
 
 	@Override
 	public void keyTyped(KeyEvent e) {
-		// TODO Auto-generated method stub
+
+
 
 	}
 

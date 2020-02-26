@@ -34,7 +34,7 @@ public class boll1 extends JComponent {
 		y=y+yv;
 		x=x+xv;
 		if (y>=300) {
-
+			y=y-3;
 			yv=-yv;
 
 		}else if (y<=0) {
