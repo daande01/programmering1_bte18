@@ -10,7 +10,6 @@ import javax.swing.JFrame;
 
 public class MussePigg extends JComponent {
 
-
 	public MussePigg() {
 		setPreferredSize(new Dimension(400, 400));
 	}

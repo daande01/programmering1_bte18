@@ -21,7 +21,7 @@ public class GrafikJbuttonactionperforme extends JFrame implements ActionListene
 		add(b1);
 		add(l1);
 		setVisible(true);
-		setSize(new Dimension(1000,1000));
+		setSize(new Dimension(1000, 1000));
 		b1.addActionListener(this);
 
 	}
@@ -35,7 +35,6 @@ public class GrafikJbuttonactionperforme extends JFrame implements ActionListene
 	public void actionPerformed(ActionEvent e) {
 
 		l1.setText("ny text");
-
 
 	}
 

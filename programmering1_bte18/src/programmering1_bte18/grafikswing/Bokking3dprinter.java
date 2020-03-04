@@ -14,16 +14,16 @@ import javax.swing.JTextField;
 
 public class Bokking3dprinter extends JFrame {
 
-	JRadioButton b1=new JRadioButton("skrivare 1");
-	JRadioButton b2=new JRadioButton("skrivare 2");
-	JRadioButton b3=new JRadioButton("skrivare 3");
-	ButtonGroup g1= new ButtonGroup();
+	JRadioButton b1 = new JRadioButton("skrivare 1");
+	JRadioButton b2 = new JRadioButton("skrivare 2");
+	JRadioButton b3 = new JRadioButton("skrivare 3");
+	ButtonGroup g1 = new ButtonGroup();
 	JLabel start = new JLabel("start time");
 	JLabel end = new JLabel("end time");
 	JTextField starttime = new JTextField(10);
 	JTextField endtime = new JTextField(10);
 	JPanel p = new JPanel();
-	JButton bb=new JButton("boka");
+	JButton bb = new JButton("boka");
 	JLabel svar = new JLabel("");
 
 	public Bokking3dprinter() {
@@ -36,7 +36,7 @@ public class Bokking3dprinter extends JFrame {
 		add(b1);
 		add(b2);
 		add(b3);
-		p.setLayout(new GridLayout(2,2));
+		p.setLayout(new GridLayout(2, 2));
 		p.add(start);
 		p.add(starttime);
 		p.add(end);
@@ -45,26 +45,25 @@ public class Bokking3dprinter extends JFrame {
 		add(bb);
 		add(svar);
 		setVisible(true);
-		setSize(new Dimension(500,500));
+		setSize(new Dimension(500, 500));
 
-		bb.addActionListener(e->{
+		bb.addActionListener(e -> {
 
-			String s=starttime.getText();
-			String et =endtime.getText();
-			String skrivare="";
+			String s = starttime.getText();
+			String et = endtime.getText();
+			String skrivare = "";
 
-			if(b1.isSelected()) {
+			if (b1.isSelected()) {
 
-				skrivare= "skrivare1";
+				skrivare = "skrivare1";
 
-			}else if (b2.isSelected()) {
-				skrivare= "skrivare2";
-			}else {
-				skrivare= "skrivare3";
+			} else if (b2.isSelected()) {
+				skrivare = "skrivare2";
+			} else {
+				skrivare = "skrivare3";
 			}
 
-
-			svar.setText(s+" "+et+ ""+ skrivare );
+			svar.setText(s + " " + et + "" + skrivare);
 		});
 
 	}
@@ -74,10 +73,5 @@ public class Bokking3dprinter extends JFrame {
 		new Bokking3dprinter();
 
 	}
-
-
-
-
-
 
 }

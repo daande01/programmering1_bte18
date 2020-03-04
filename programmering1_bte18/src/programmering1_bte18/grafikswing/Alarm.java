@@ -18,13 +18,11 @@ public class Alarm {
 
 		// System.out.println(h+" ---"+m);
 
-
 		// System.out.println(datorh+" ---"+datorm);
 
 		TimerTask repeatedTask = new TimerTask() {
 			@Override
 			public void run() {
-
 
 				int datorh = LocalDateTime.now().getHour();
 				int datorm = LocalDateTime.now().getMinute();

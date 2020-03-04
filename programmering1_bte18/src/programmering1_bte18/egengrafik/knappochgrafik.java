@@ -2,78 +2,59 @@ package programmering1_bte18.egengrafik;
 
 import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.FlowLayout;
 import java.awt.Graphics;
 
+import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 import javax.swing.Timer;
 
-public class boll1 extends JComponent {
+public class knappochgrafik extends JComponent {
+
 	int x = 100;
 	int y = 100;
-	int xv = 2;
-	int yv = 3;
 	static Timer t;
 
-	public boll1() {
-
+	public knappochgrafik() {
 		this.setPreferredSize(new Dimension(400, 400));
 		t = new Timer(20, e -> {
-
 			update();
-
 		});
 		t.start();
 	}
 
-	public void update() {
-
-		yv = yv + 2;
-
-		y = y + yv;
-		x = x + xv;
-		if (y >= 300) {
-			y = y - 3;
-			yv = -yv;
-
-		} else if (y <= 0) {
-
-			yv = yv * -1;
-
-		}
-
-		if (x >= 300) {
-
-			xv = -xv;
-
-		} else if (x <= 0) {
-
-			xv = xv * -1;
-
-		}
-
-		this.repaint();
-
-	}
-
 	@Override
 	protected void paintComponent(Graphics g) {
-
 		super.paintComponent(g);
 		g.setColor(Color.black);
-		g.fillOval(x, y, 100, 100);
+		g.fillRect(x, y, 20, 20);
+	}
+
+	private void update() {
+		x++;
+		y++;
+		// System.out.println(x);
+		repaint();
+
 	}
 
 	public static void main(String[] args) {
 
-		JFrame f = new JFrame("test");
+		JFrame f = new JFrame();
+		JButton b1 = new JButton("stop");
+		JPanel p = new JPanel();
+		p.add(new knappochgrafik());
+		p.add(b1);
+		b1.addActionListener(e -> {
 
-		f.setLayout(new FlowLayout());
-		f.setContentPane(new boll1());
+			t.stop();
+		});
+
+		f.setContentPane(p);
 		f.setVisible(true);
+		f.setSize(400, 400);
 		f.pack();
-
 	}
 
 }

@@ -16,7 +16,6 @@ public class ÖkaMinska extends JFrame {
 
 	public ÖkaMinska() { // konstruktor
 
-
 		setLayout(new FlowLayout()); // var saker skall placeras i frönstret och hur
 
 		minska.addActionListener(e -> {

@@ -1,6 +1,5 @@
 package programmering1_bte18.egengrafik;
 
-
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
@@ -14,14 +13,14 @@ import javax.swing.Timer;
 
 public class boll2key extends JComponent implements KeyListener {
 	int x = 100;
-	int y=100;
-	int xv=1;
-	int yv=1;
+	int y = 100;
+	int xv = 1;
+	int yv = 1;
 	static Timer t;
 
 	public boll2key() {
 		this.addKeyListener(this);
-		this.setPreferredSize(new Dimension(400,400));
+		this.setPreferredSize(new Dimension(400, 400));
 		t = new Timer(20, e -> {
 
 			update();
@@ -32,32 +31,31 @@ public class boll2key extends JComponent implements KeyListener {
 
 	public void update() {
 
-		//yv=yv+2;
+		// yv=yv+2;
 
-		y=y+yv;
-		x=x+xv;
-		if (y>=300) {
+		y = y + yv;
+		x = x + xv;
+		if (y >= 300) {
 
-			yv=-yv;
+			yv = -yv;
 
-		}else if (y<=0) {
+		} else if (y <= 0) {
 
-			yv=yv*-1;
-			y=0;
+			yv = yv * -1;
+			y = 0;
 		}
 
-		if (x>=300) {
+		if (x >= 300) {
 
-			xv=-xv;
+			xv = -xv;
 
-		}else if (x<=0) {
+		} else if (x <= 0) {
 
-			xv=xv*-1;
+			xv = xv * -1;
 
 		}
 
-
-			this.repaint();
+		this.repaint();
 
 	}
 
@@ -87,11 +85,9 @@ public class boll2key extends JComponent implements KeyListener {
 
 		if (key == KeyEvent.VK_UP) {
 
-
-			y=y-10;
+			y = y - 10;
 
 		}
-
 
 	}
 
@@ -104,15 +100,11 @@ public class boll2key extends JComponent implements KeyListener {
 	@Override
 	public void keyTyped(KeyEvent e) {
 
-
-
 	}
 
 	@Override
 	public boolean isFocusTraversable() {
 		return true;
 	}
-
-
 
 }

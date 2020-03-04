@@ -9,23 +9,17 @@ public class Timertest {
 	public static void main(String[] args) {
 
 		TimerTask repeatedTask = new TimerTask() {
-	        @Override
+			@Override
 			public void run() {
-	            System.out.println("Task performed on " + new Date());
-	        }
-	    };
-	    Timer timer = new Timer("Timer");
+				System.out.println("Task performed on " + new Date());
+			}
+		};
+		Timer timer = new Timer("Timer");
 
-	    long delay  = 1000L;
-	    long period = 1000L;
-	    timer.scheduleAtFixedRate(repeatedTask, delay, period);
-
-
-
-
-
+		long delay = 1000L;
+		long period = 1000L;
+		timer.scheduleAtFixedRate(repeatedTask, delay, period);
 
 	}
-
 
 }
