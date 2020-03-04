@@ -9,12 +9,17 @@ import javax.swing.JComponent;
 import javax.swing.JFrame;
 import javax.swing.Timer;
 
+
+
 public class boll1 extends JComponent {
-	int x = 100;
+
+
+
+	int x = 100;  // instansvariabler
 	int y = 100;
 	int xv = 2;
 	int yv = 3;
-	static Timer t;
+	static Timer t; // klassvariabel
 
 	public boll1() {
 
