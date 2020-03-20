@@ -17,7 +17,7 @@ public class Bollbanan extends JComponent {
 	public Bollbanan() {
 
 		for (int i=0;i<10;i++) {
-		bolllista.add(new Boll(Math.random()*400, Math.random()*400, 0, 3, new Color((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255))));
+		bolllista.add( new Boll(Math.random() *100, Math.random()*400, Math.random()*400, 0, 3, new Color((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255))));
 		}
 
 

@@ -5,30 +5,29 @@ import java.awt.Graphics;
 
 public class Boll {
 
-
-	double x=0;
-	double y=0;
-	double xv=1;
-	double yv=1;
+	double x = 0;
+	double y = 0;
+	double xv = 1;
+	double yv = 1;
+	double r=0;
 	Color cc;
 
+	public Boll(double r,double x, double y, double xv, double yv, Color c) {
 
-	public Boll(double x,double y , double xv , double yv, Color c) {
-
-		this.x=x;
-		this.y=y;
-		this.xv=xv;
-		this.yv=yv;
-		this.cc=c;
+		this.x = x;
+		this.y = y;
+		this.xv = xv;
+		this.yv = yv;
+		this.cc = c;
+		this.r=r;
 
 	}
 
 	public void rita(Graphics g) {
 		g.setColor(cc);
-		g.fillOval(x(), y(), 40, 40);
+		g.fillOval(x(), y(), (int)r, (int)r);
 
 	}
-
 
 	public int x() {
 
@@ -36,23 +35,21 @@ public class Boll {
 	}
 
 	public int y() {
-		return (int)Math.round(y);
+		return (int) Math.round(y);
 	}
 
 	public void update() {
 
-		yv=yv+1;
+		yv = yv + 1;
 
-		if (y>400-40) {
+		if (y > 400 - 40) {
 
-
-			yv=-yv;
+			yv = -yv;
 		}
 
-		x+=1;
-		y+=yv;
+		x += 1;
+		y += yv;
 
 	}
-
 
 }
