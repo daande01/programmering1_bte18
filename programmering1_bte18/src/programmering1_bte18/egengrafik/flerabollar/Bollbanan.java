@@ -2,7 +2,6 @@ package programmering1_bte18.egengrafik.flerabollar;
 
 import java.awt.Color;
 import java.awt.Graphics;
-import java.util.LinkedList;
 
 import javax.swing.JComponent;
 import javax.swing.JFrame;
@@ -13,7 +12,7 @@ public class Bollbanan extends JComponent {
 	private Boll b1;
 	private Boll b2;
 
-	public LinkedList<Boll> bolllista= new LinkedList<Boll>();
+
 
 	public Bollbanan() {
 
