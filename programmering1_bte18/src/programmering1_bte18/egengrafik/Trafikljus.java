@@ -62,9 +62,6 @@ public class Trafikljus extends JComponent {
 
 		Trafikljus t = new Trafikljus();
 
-
-
-
 		JFrame f = new JFrame();
 		JButton b = new JButton("klick");
 		JPanel p = new JPanel();
